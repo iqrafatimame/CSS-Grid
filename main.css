@@ -1,0 +1,35 @@
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    height: 100%;
+    display: grid;
+    text-align: center;
+    font-size: 25px;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 300px 50px;
+    grid-template-areas: 
+        "m h h h h h h h h h h h"
+        "m c c c c c c c c c c c" /*use dot to leave the space empty*/
+        "m f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+}
+
